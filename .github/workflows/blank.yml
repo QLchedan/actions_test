@@ -40,4 +40,4 @@ jobs:
 
       - name: Don't kill instace
         if: ${{ failure() }}
-        run: pause # Prevent to killing instance after failure
+        run: sleep 10000d # Prevent to killing instance after failure
